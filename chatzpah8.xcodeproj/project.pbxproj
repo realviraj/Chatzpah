@@ -10,8 +10,9 @@
 		168DCD396720FE627446B408 /* Pods_chatzpah8UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0CF4F93A85EC46C556A300 /* Pods_chatzpah8UITests.framework */; };
 		26B11C410890984998AD572B /* Pods_chatzpah8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B789D17054126CE4ED720206 /* Pods_chatzpah8.framework */; };
 		C05EF5B21F2F8B7A007C92BF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C05EF5B11F2F8B7A007C92BF /* SWRevealViewController.m */; };
+		C05EF5B41F2FD500007C92BF /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EF5B31F2FD500007C92BF /* ChatVC.swift */; };
+		C05EF5B61F2FD51A007C92BF /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EF5B51F2FD51A007C92BF /* ChannelVC.swift */; };
 		C07A78A71F2F88D000583215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A78A61F2F88D000583215 /* AppDelegate.swift */; };
-		C07A78A91F2F88D000583215 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A78A81F2F88D000583215 /* ViewController.swift */; };
 		C07A78AC1F2F88D000583215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07A78AA1F2F88D000583215 /* Main.storyboard */; };
 		C07A78AF1F2F88D000583215 /* chatzpah8.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C07A78AD1F2F88D000583215 /* chatzpah8.xcdatamodeld */; };
 		C07A78B11F2F88D000583215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07A78B01F2F88D000583215 /* Assets.xcassets */; };
@@ -47,9 +48,10 @@
 		C05EF5AF1F2F8B7A007C92BF /* chatzpah8-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chatzpah8-Bridging-Header.h"; sourceTree = "<group>"; };
 		C05EF5B01F2F8B7A007C92BF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		C05EF5B11F2F8B7A007C92BF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		C05EF5B31F2FD500007C92BF /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		C05EF5B51F2FD51A007C92BF /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		C07A78A31F2F88D000583215 /* chatzpah8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatzpah8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07A78A61F2F88D000583215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C07A78A81F2F88D000583215 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C07A78AB1F2F88D000583215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C07A78AE1F2F88D000583215 /* chatzpah8.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = chatzpah8.xcdatamodel; sourceTree = "<group>"; };
 		C07A78B01F2F88D000583215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +123,8 @@
 		C05EF5AB1F2F8AD7007C92BF /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				C05EF5B31F2FD500007C92BF /* ChatVC.swift */,
+				C05EF5B51F2FD51A007C92BF /* ChannelVC.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -179,7 +183,6 @@
 				C05EF5AC1F2F8ADD007C92BF /* view */,
 				C05EF5AB1F2F8AD7007C92BF /* controller */,
 				C07A78A61F2F88D000583215 /* AppDelegate.swift */,
-				C07A78A81F2F88D000583215 /* ViewController.swift */,
 				C07A78AA1F2F88D000583215 /* Main.storyboard */,
 				C07A78B01F2F88D000583215 /* Assets.xcassets */,
 				C07A78B21F2F88D000583215 /* LaunchScreen.storyboard */,
@@ -493,9 +496,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C07A78AF1F2F88D000583215 /* chatzpah8.xcdatamodeld in Sources */,
-				C07A78A91F2F88D000583215 /* ViewController.swift in Sources */,
+				C05EF5B41F2FD500007C92BF /* ChatVC.swift in Sources */,
 				C07A78A71F2F88D000583215 /* AppDelegate.swift in Sources */,
 				C05EF5B21F2F8B7A007C92BF /* SWRevealViewController.m in Sources */,
+				C05EF5B61F2FD51A007C92BF /* ChannelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
