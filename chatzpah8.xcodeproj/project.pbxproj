@@ -22,6 +22,7 @@
 		C07A78CA1F2F88D100583215 /* chatzpah8UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A78C91F2F88D100583215 /* chatzpah8UITests.swift */; };
 		C0D13C221F30EF1500DE4791 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D13C211F30EF1500DE4791 /* Constant.swift */; };
 		C0D13C261F30FDCE00DE4791 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D13C251F30FDCE00DE4791 /* LoginVC.swift */; };
+		C0D13C281F311C4600DE4791 /* CreateAcoountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D13C271F311C4600DE4791 /* CreateAcoountVC.swift */; };
 		FB1D35E04997D1E399328B64 /* Pods_chatzpah8Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41778588BFB6B0E6148416D6 /* Pods_chatzpah8Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		C07A78CB1F2F88D100583215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0D13C211F30EF1500DE4791 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		C0D13C251F30FDCE00DE4791 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C0D13C271F311C4600DE4791 /* CreateAcoountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAcoountVC.swift; sourceTree = "<group>"; };
 		CC0B88A0D627950C8DC96489 /* Pods-chatzpah8Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatzpah8Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-chatzpah8Tests/Pods-chatzpah8Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D93EB38C869929DDFF212CEB /* Pods-chatzpah8Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatzpah8Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-chatzpah8Tests/Pods-chatzpah8Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED0CF4F93A85EC46C556A300 /* Pods_chatzpah8UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chatzpah8UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				C05EF5B31F2FD500007C92BF /* ChatVC.swift */,
 				C05EF5B51F2FD51A007C92BF /* ChannelVC.swift */,
 				C0D13C251F30FDCE00DE4791 /* LoginVC.swift */,
+				C0D13C271F311C4600DE4791 /* CreateAcoountVC.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D13C281F311C4600DE4791 /* CreateAcoountVC.swift in Sources */,
 				C0D13C221F30EF1500DE4791 /* Constant.swift in Sources */,
 				C07A78AF1F2F88D000583215 /* chatzpah8.xcdatamodeld in Sources */,
 				C0D13C261F30FDCE00DE4791 /* LoginVC.swift in Sources */,
