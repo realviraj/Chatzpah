@@ -9,9 +9,9 @@
 import Foundation
 import Alamofire
 
-class AuthServices {
+class AuthService {
     
-    static let instance = AuthServices()
+    static let instance = AuthService()
     
     let defaults = UserDefaults.standard
     
@@ -47,7 +47,7 @@ class AuthServices {
         let lowerCaseEmail = email.lowercased()
         
         let header = [
-            "content-type": "application/json; charset= utf-8"
+            "Content-Type": "application/json; charset=utf-8"
         ]
         let body: [String: Any] = [
             "email": lowerCaseEmail,
@@ -63,15 +63,6 @@ class AuthServices {
                 debugPrint(response.result.error as Any)
             }
         }
-        
     }
-    
-    
-    
-    
-    
-    
-    
-
 }
 

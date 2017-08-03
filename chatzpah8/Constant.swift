@@ -12,8 +12,8 @@ typealias CompletionHandler = (_ Success:Bool) -> ()
 
 
 //URL
-let BASE_URL =  "https://chatzpah.herokuapp.com/"
-let URL_REGISTER = "\(BASE_URL)accounts/resgister"
+let BASE_URL = "https://chatzpah2.herokuapp.com/v1/"
+let URL_REGISTER = "\(BASE_URL)account/register"
 
 
 //SEGUES
