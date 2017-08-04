@@ -14,6 +14,7 @@
 		C05EF5B41F2FD500007C92BF /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EF5B31F2FD500007C92BF /* ChatVC.swift */; };
 		C05EF5B61F2FD51A007C92BF /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EF5B51F2FD51A007C92BF /* ChannelVC.swift */; };
 		C05EF5B81F2FF236007C92BF /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05EF5B71F2FF236007C92BF /* GradientView.swift */; };
+		C064F06A1F33E46A00CEB69E /* UserDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C064F0691F33E46A00CEB69E /* UserDataServices.swift */; };
 		C07A78A71F2F88D000583215 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A78A61F2F88D000583215 /* AppDelegate.swift */; };
 		C07A78AC1F2F88D000583215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07A78AA1F2F88D000583215 /* Main.storyboard */; };
 		C07A78AF1F2F88D000583215 /* chatzpah8.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C07A78AD1F2F88D000583215 /* chatzpah8.xcdatamodeld */; };
@@ -58,6 +59,7 @@
 		C05EF5B31F2FD500007C92BF /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		C05EF5B51F2FD51A007C92BF /* ChannelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		C05EF5B71F2FF236007C92BF /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C064F0691F33E46A00CEB69E /* UserDataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataServices.swift; sourceTree = "<group>"; };
 		C07A78A31F2F88D000583215 /* chatzpah8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatzpah8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07A78A61F2F88D000583215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C07A78AB1F2F88D000583215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				C0208F971F326E8400ED1744 /* AuthServices.swift */,
+				C064F0691F33E46A00CEB69E /* UserDataServices.swift */,
 			);
 			name = services;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 			files = (
 				C0D13C281F311C4600DE4791 /* CreateAcoountVC.swift in Sources */,
 				C0D13C221F30EF1500DE4791 /* Constant.swift in Sources */,
+				C064F06A1F33E46A00CEB69E /* UserDataServices.swift in Sources */,
 				C07A78AF1F2F88D000583215 /* chatzpah8.xcdatamodeld in Sources */,
 				C0D13C261F30FDCE00DE4791 /* LoginVC.swift in Sources */,
 				C05EF5B41F2FD500007C92BF /* ChatVC.swift in Sources */,
