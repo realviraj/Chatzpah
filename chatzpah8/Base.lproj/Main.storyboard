@@ -242,15 +242,15 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wsn-wn-lbT">
                                 <rect key="frame" x="16" y="78" width="343" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VWL-Kk-eqD">
-                                    <size key="itemSize" width="100" height="100"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jrP-fy-zkT">
+                                    <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="avatarCell" id="hWk-Sa-NiY" customClass="AvatarCell" customModule="chatzpah8" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -267,6 +267,7 @@
                                             <constraint firstItem="ZXC-Mo-Wke" firstAttribute="top" secondItem="hWk-Sa-NiY" secondAttribute="top" constant="10" id="OnI-xM-2Pm"/>
                                             <constraint firstAttribute="trailing" secondItem="ZXC-Mo-Wke" secondAttribute="trailing" constant="10" id="RQt-eH-Alz"/>
                                         </constraints>
+                                        <size key="customSize" width="100" height="100"/>
                                         <connections>
                                             <outlet property="avatarImage" destination="ZXC-Mo-Wke" id="pFZ-mJ-5zd"/>
                                         </connections>
