@@ -24,7 +24,13 @@ let TO_CREATEACCOUNT = "toCreateAccount"
 let UNWIND = "unwindToChannel"
 let TO_AVATAR_PICKER = "toAvatarPicker"
 
+//colors
 
+let chatsPurplePlaceholder = #colorLiteral(red: 0.6052985191, green: 0.1573151946, blue: 0.7275595069, alpha: 0.5)
+
+// notification constant
+
+let NOTIF_USER_DID_CHANGE = Notification.Name("notifUserDataChange")
 
 //USER DEFAULTS
 let TOKEN_KEY = "token"

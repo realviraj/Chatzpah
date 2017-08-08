@@ -117,7 +117,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-ha-42G">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-ha-42G" customClass="CircleImage" customModule="chatzpah8" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="317.5" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="CbA-L7-pJ1"/>
@@ -169,10 +169,16 @@
                                     <action selector="pickBgColorPressed:" destination="XHM-PN-ECr" eventType="touchUpInside" id="5u2-LP-afr"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-R6-lTJ">
+                                <rect key="frame" x="169" y="215.5" width="37" height="37"/>
+                                <color key="color" red="0.60529851909999999" green="0.15731519460000001" blue="0.72755950690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ul6-vM-815" firstAttribute="centerX" secondItem="fHa-sE-K1n" secondAttribute="centerX" id="3wI-op-fiX"/>
+                            <constraint firstItem="8hH-R6-lTJ" firstAttribute="centerY" secondItem="fHa-sE-K1n" secondAttribute="centerY" constant="-100" id="BuM-5e-TEN"/>
+                            <constraint firstItem="8hH-R6-lTJ" firstAttribute="centerX" secondItem="fHa-sE-K1n" secondAttribute="centerX" id="IGU-qW-lLO"/>
                             <constraint firstItem="Qgh-ha-42G" firstAttribute="top" secondItem="IH1-yM-jvi" secondAttribute="bottom" constant="50" id="MrU-oU-M28"/>
                             <constraint firstItem="lw4-Qa-8l0" firstAttribute="centerX" secondItem="fHa-sE-K1n" secondAttribute="centerX" id="P4a-Q0-K50"/>
                             <constraint firstItem="91U-yH-7RG" firstAttribute="centerX" secondItem="fHa-sE-K1n" secondAttribute="centerX" id="Svu-jc-2iI"/>
@@ -191,6 +197,7 @@
                     <connections>
                         <outlet property="emailField" destination="6bJ-2B-RQT" id="kT2-Dk-OA4"/>
                         <outlet property="passwordField" destination="JwX-1Q-ku7" id="y9C-XE-YzC"/>
+                        <outlet property="spinner" destination="8hH-R6-lTJ" id="QcE-C9-W3B"/>
                         <outlet property="userField" destination="8bk-dv-Cwc" id="hPF-Mm-QRv"/>
                         <outlet property="userImage" destination="Qgh-ha-42G" id="nWK-6g-zr3"/>
                         <segue destination="ZxD-gV-oGO" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForunwindWithSegue:" id="IkA-7N-Qr5"/>
@@ -325,7 +332,7 @@
                                 <rect key="frame" x="281" y="86.5" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="PsU-8v-kLy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="PsU-8v-kLy" customClass="CircleImage" customModule="chatzpah8" customModuleProvider="target">
                                 <rect key="frame" x="16" y="572" width="75" height="75"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="4dm-7J-nlp"/>
