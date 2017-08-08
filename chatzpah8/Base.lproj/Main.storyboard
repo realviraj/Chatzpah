@@ -405,6 +405,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="ZqC-ci-6Uj" id="94p-Cm-5Xq"/>
+                        <outlet property="userImg" destination="PsU-8v-kLy" id="nE0-Y1-PwU"/>
                         <segue destination="LcU-3L-MC6" kind="show" identifier="toLogin" id="tyF-ya-6sN"/>
                     </connections>
                 </viewController>

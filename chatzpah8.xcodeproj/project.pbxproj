@@ -23,6 +23,8 @@
 		C07A78B41F2F88D000583215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C07A78B21F2F88D000583215 /* LaunchScreen.storyboard */; };
 		C07A78BF1F2F88D000583215 /* chatzpah8Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A78BE1F2F88D000583215 /* chatzpah8Tests.swift */; };
 		C07A78CA1F2F88D100583215 /* chatzpah8UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A78C91F2F88D100583215 /* chatzpah8UITests.swift */; };
+		C0A227B51F3A140300AC7184 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A227B31F3A140300AC7184 /* ProfileVC.swift */; };
+		C0A227B61F3A140300AC7184 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0A227B41F3A140300AC7184 /* ProfileVC.xib */; };
 		C0B096BC1F33C077009A544B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B096BB1F33C077009A544B /* RoundedButton.swift */; };
 		C0B141CC1F36884600ADCEAD /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B141CB1F36884600ADCEAD /* AvatarCell.swift */; };
 		C0D13C221F30EF1500DE4791 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D13C211F30EF1500DE4791 /* Constant.swift */; };
@@ -77,6 +79,8 @@
 		C07A78C51F2F88D000583215 /* chatzpah8UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatzpah8UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07A78C91F2F88D100583215 /* chatzpah8UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatzpah8UITests.swift; sourceTree = "<group>"; };
 		C07A78CB1F2F88D100583215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0A227B31F3A140300AC7184 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		C0A227B41F3A140300AC7184 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		C0B096BB1F33C077009A544B /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		C0B141CB1F36884600ADCEAD /* AvatarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		C0D13C211F30EF1500DE4791 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 				C0D13C251F30FDCE00DE4791 /* LoginVC.swift */,
 				C0D13C271F311C4600DE4791 /* CreateAcoountVC.swift */,
 				C0334F401F34DD4A00C5EAD1 /* AvatarPickerVC.swift */,
+				C0A227B31F3A140300AC7184 /* ProfileVC.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 		C07A78A51F2F88D000583215 /* chatzpah8 */ = {
 			isa = PBXGroup;
 			children = (
+				C0A227B71F3A1AF100AC7184 /* xib */,
 				C0208F961F326E3E00ED1744 /* services */,
 				C0D13C201F30EE8100DE4791 /* Utilities */,
 				C05EF5AE1F2F8AE7007C92BF /* supporting-files */,
@@ -246,6 +252,14 @@
 				C07A78CB1F2F88D100583215 /* Info.plist */,
 			);
 			path = chatzpah8UITests;
+			sourceTree = "<group>";
+		};
+		C0A227B71F3A1AF100AC7184 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				C0A227B41F3A140300AC7184 /* ProfileVC.xib */,
+			);
+			name = xib;
 			sourceTree = "<group>";
 		};
 		C0D13C201F30EE8100DE4791 /* Utilities */ = {
@@ -376,6 +390,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A227B61F3A140300AC7184 /* ProfileVC.xib in Resources */,
 				C07A78B41F2F88D000583215 /* LaunchScreen.storyboard in Resources */,
 				C07A78B11F2F88D000583215 /* Assets.xcassets in Resources */,
 				C07A78AC1F2F88D000583215 /* Main.storyboard in Resources */,
@@ -545,6 +560,7 @@
 				C0D13C221F30EF1500DE4791 /* Constant.swift in Sources */,
 				C0B141CC1F36884600ADCEAD /* AvatarCell.swift in Sources */,
 				C064F06A1F33E46A00CEB69E /* UserDataServices.swift in Sources */,
+				C0A227B51F3A140300AC7184 /* ProfileVC.swift in Sources */,
 				C07A78AF1F2F88D000583215 /* chatzpah8.xcdatamodeld in Sources */,
 				C0D13C261F30FDCE00DE4791 /* LoginVC.swift in Sources */,
 				C05EF5B41F2FD500007C92BF /* ChatVC.swift in Sources */,
@@ -714,7 +730,7 @@
 				DEVELOPMENT_TEAM = 9EZ6Z8S349;
 				INFOPLIST_FILE = chatzpah8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.agloelabs.chatzpah8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agloelabs.chatzpah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "chatzpah8/chatzpah8-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -731,7 +747,7 @@
 				DEVELOPMENT_TEAM = 9EZ6Z8S349;
 				INFOPLIST_FILE = chatzpah8/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.agloelabs.chatzpah8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agloelabs.chatzpah;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "chatzpah8/chatzpah8-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -30,7 +30,7 @@ let chatsPurplePlaceholder = #colorLiteral(red: 0.6052985191, green: 0.157315194
 
 // notification constant
 
-let NOTIF_USER_DID_CHANGE = Notification.Name("notifUserDataChange")
+let NOTIF_USER_DID_CHANGE = Notification.Name("notifUserDataChanged")
 
 //USER DEFAULTS
 let TOKEN_KEY = "token"
