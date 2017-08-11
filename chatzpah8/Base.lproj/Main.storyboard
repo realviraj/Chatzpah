@@ -508,6 +508,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="LcU-3L-MC6" eventType="touchUpInside" id="e0P-35-sG6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WX4-du-4vY">
                                 <rect key="frame" x="68.5" y="344" width="238" height="30"/>
@@ -523,14 +526,20 @@
                                     <action selector="createAccBtnPressed:" destination="LcU-3L-MC6" eventType="touchUpInside" id="shQ-jn-8yY"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Jcq-A0-y68">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.60529851909999999" green="0.15731519460000001" blue="0.72755950690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WX4-du-4vY" firstAttribute="top" secondItem="Xb1-I9-Pwe" secondAttribute="bottom" constant="1" id="5sG-Kf-Icp"/>
+                            <constraint firstItem="Jcq-A0-y68" firstAttribute="centerX" secondItem="dix-De-4R1" secondAttribute="centerX" id="I3P-IV-969"/>
                             <constraint firstItem="wmc-Eu-iGH" firstAttribute="top" secondItem="NYL-Rj-Zq8" secondAttribute="bottom" constant="20" id="ING-ae-9JN"/>
                             <constraint firstItem="WX4-du-4vY" firstAttribute="centerX" secondItem="dix-De-4R1" secondAttribute="centerX" id="Ji8-t0-aUq"/>
                             <constraint firstItem="AjH-NM-5Q8" firstAttribute="top" secondItem="NYL-Rj-Zq8" secondAttribute="bottom" constant="59" id="K3o-if-O3y"/>
                             <constraint firstItem="Xb1-I9-Pwe" firstAttribute="top" secondItem="IPf-Js-lWa" secondAttribute="bottom" constant="40" id="Pon-NZ-j2E"/>
+                            <constraint firstItem="Jcq-A0-y68" firstAttribute="centerY" secondItem="dix-De-4R1" secondAttribute="centerY" constant="-100" id="SQq-uc-EjV"/>
                             <constraint firstItem="IPf-Js-lWa" firstAttribute="top" secondItem="AjH-NM-5Q8" secondAttribute="bottom" constant="40" id="Ube-7B-0oq"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wmc-Eu-iGH" secondAttribute="trailing" constant="20" id="nEd-fe-6mM"/>
                             <constraint firstItem="Xb1-I9-Pwe" firstAttribute="centerX" secondItem="dix-De-4R1" secondAttribute="centerX" id="rCv-LB-zH7"/>
@@ -539,6 +548,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="SnO-Yo-Reg" id="V1a-jC-une"/>
+                        <outlet property="spinner" destination="Jcq-A0-y68" id="kQT-UJ-eRT"/>
+                        <outlet property="userNameTxt" destination="d68-dx-66d" id="1jW-Ko-v0p"/>
                         <segue destination="XHM-PN-ECr" kind="show" identifier="toCreateAccount" id="NGW-Ox-hMH"/>
                     </connections>
                 </viewController>

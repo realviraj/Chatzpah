@@ -25,8 +25,11 @@ class ChatVC: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         
-        
+//        check if user is logged out
+        if AuthService.instance.isLoggedIn {
+            AuthService.instance.findUserByEmail(completion: { (success) in
+                NotificationCenter.default.post(name: NOTIF_USER_DID_CHANGE, object: nil)
+            })
+        }
     }
-
-
 }

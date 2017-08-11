@@ -24,7 +24,16 @@ class ChannelVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        setUpUserInfo()
+    }
+    
     @objc func userDataDidChange(_ notif: Notification) {
+        setUpUserInfo()
+    }
+    
+    func setUpUserInfo() {
+        
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
