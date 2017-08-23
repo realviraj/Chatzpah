@@ -28,6 +28,7 @@
 		C07A78CA1F2F88D100583215 /* chatzpah8UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07A78C91F2F88D100583215 /* chatzpah8UITests.swift */; };
 		C08F54841F4E16A70051B9B2 /* addChannelVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F54821F4E16A70051B9B2 /* addChannelVCViewController.swift */; };
 		C08F54851F4E16A70051B9B2 /* addChannelVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C08F54831F4E16A70051B9B2 /* addChannelVCViewController.xib */; };
+		C08F54871F4E2A1D0051B9B2 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08F54861F4E2A1D0051B9B2 /* SocketService.swift */; };
 		C0A227B51F3A140300AC7184 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A227B31F3A140300AC7184 /* ProfileVC.swift */; };
 		C0A227B61F3A140300AC7184 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0A227B41F3A140300AC7184 /* ProfileVC.xib */; };
 		C0B096BC1F33C077009A544B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B096BB1F33C077009A544B /* RoundedButton.swift */; };
@@ -89,6 +90,7 @@
 		C07A78CB1F2F88D100583215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C08F54821F4E16A70051B9B2 /* addChannelVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addChannelVCViewController.swift; sourceTree = "<group>"; };
 		C08F54831F4E16A70051B9B2 /* addChannelVCViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addChannelVCViewController.xib; sourceTree = "<group>"; };
+		C08F54861F4E2A1D0051B9B2 /* SocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		C0A227B31F3A140300AC7184 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C0A227B41F3A140300AC7184 /* ProfileVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		C0B096BB1F33C077009A544B /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				C0208F971F326E8400ED1744 /* AuthServices.swift */,
 				C064F0691F33E46A00CEB69E /* UserDataServices.swift */,
 				C03535041F3E1B750065C805 /* MessageServices.swift */,
+				C08F54861F4E2A1D0051B9B2 /* SocketService.swift */,
 			);
 			name = services;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				C04779021F3E436500160976 /* ChannelCell.swift in Sources */,
 				C0B096BC1F33C077009A544B /* RoundedButton.swift in Sources */,
 				C05EF5B81F2FF236007C92BF /* GradientView.swift in Sources */,
+				C08F54871F4E2A1D0051B9B2 /* SocketService.swift in Sources */,
 				C07A78A71F2F88D000583215 /* AppDelegate.swift in Sources */,
 				C05EF5B21F2F8B7A007C92BF /* SWRevealViewController.m in Sources */,
 				C05EF5B61F2FD51A007C92BF /* ChannelVC.swift in Sources */,
