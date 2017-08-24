@@ -10,6 +10,7 @@
 		168DCD396720FE627446B408 /* Pods_chatzpah8UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED0CF4F93A85EC46C556A300 /* Pods_chatzpah8UITests.framework */; };
 		26B11C410890984998AD572B /* Pods_chatzpah8.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B789D17054126CE4ED720206 /* Pods_chatzpah8.framework */; };
 		C009221D1F4F2B4F00F0D641 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009221C1F4F2B4F00F0D641 /* Message.swift */; };
+		C009221F1F4F6A5C00F0D641 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C009221E1F4F6A5C00F0D641 /* KeyboardBoundView.swift */; };
 		C0208F981F326E8400ED1744 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0208F971F326E8400ED1744 /* AuthServices.swift */; };
 		C0334F411F34DD4A00C5EAD1 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0334F401F34DD4A00C5EAD1 /* AvatarPickerVC.swift */; };
 		C03535051F3E1B750065C805 /* MessageServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03535041F3E1B750065C805 /* MessageServices.swift */; };
@@ -65,6 +66,7 @@
 		88FF54F2BF1C197F7C614DD6 /* Pods-chatzpah8.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatzpah8.release.xcconfig"; path = "Pods/Target Support Files/Pods-chatzpah8/Pods-chatzpah8.release.xcconfig"; sourceTree = "<group>"; };
 		B789D17054126CE4ED720206 /* Pods_chatzpah8.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chatzpah8.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C009221C1F4F2B4F00F0D641 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		C009221E1F4F6A5C00F0D641 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		C0208F971F326E8400ED1744 /* AuthServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		C0334F401F34DD4A00C5EAD1 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		C03535041F3E1B750065C805 /* MessageServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageServices.swift; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				C0B141CB1F36884600ADCEAD /* AvatarCell.swift */,
 				C0FE52901F38FB5200406235 /* CircleImage.swift */,
 				C04779011F3E436500160976 /* ChannelCell.swift */,
+				C009221E1F4F6A5C00F0D641 /* KeyboardBoundView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -580,6 +583,7 @@
 			files = (
 				C0D13C281F311C4600DE4791 /* CreateAcoountVC.swift in Sources */,
 				C0D13C221F30EF1500DE4791 /* Constant.swift in Sources */,
+				C009221F1F4F6A5C00F0D641 /* KeyboardBoundView.swift in Sources */,
 				C08F54841F4E16A70051B9B2 /* addChannelVCViewController.swift in Sources */,
 				C0B141CC1F36884600ADCEAD /* AvatarCell.swift in Sources */,
 				C064F06A1F33E46A00CEB69E /* UserDataServices.swift in Sources */,
