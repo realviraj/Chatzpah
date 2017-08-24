@@ -33,6 +33,8 @@ let chatsPurplePlaceholder = #colorLiteral(red: 0.6052985191, green: 0.157315194
 // notification constant
 
 let NOTIF_USER_DID_CHANGE = Notification.Name("notifUserDataChanged")
+let NOTIF_CHANNELS_LOADED = Notification.Name("channelIsLoaded")
+let NOTIF_CHANNELS_SELECTED = Notification.Name("channelSelected")
 
 //USER DEFAULTS
 let TOKEN_KEY = "token"
