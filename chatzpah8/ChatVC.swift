@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ChatVC: UIViewController {
+class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     
@@ -17,8 +17,18 @@ class ChatVC: UIViewController {
 
     @IBOutlet weak var channelNameLabl: UILabel!
     @IBOutlet weak var msgTextbox: UITextField!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+//        dynamic table dimension
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
 //        get back down the keyboard
         view.bindToKeyboard()
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
@@ -77,8 +87,6 @@ class ChatVC: UIViewController {
             })
         }
     }
-    
-    
     func onLoginGetMessages() {
         MessageServices.instance.findAllChannel { (success) in
             if success {
@@ -93,12 +101,32 @@ class ChatVC: UIViewController {
             }
         }
     }
-    
-    
-    
     func getMessages() {
         guard let channelId = MessageServices.instance.selectedChannels?.id else {return}
         MessageServices.instance.findAllMesssagesForChannels(channelId: channelId) { (success) in
+            self.tableView.reloadData()
         }
     }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell", for: indexPath) as? MessageCell {
+            let message = MessageServices.instance.messages[indexPath.row]
+            cell.configCell(message: message)
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MessageServices.instance.messages.count
+    }
+    
+    
+    
 }
+
+
