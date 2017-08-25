@@ -68,6 +68,7 @@ class UserDataService {
         AuthService.instance.userEmail = ""
         AuthService.instance.authToken = ""
         MessageServices.instance.clearChannels()
+        MessageServices.instance.clearMessages()
     }
     
     func setAvatarName(avatarName: String) {

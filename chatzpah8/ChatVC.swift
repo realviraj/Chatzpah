@@ -14,16 +14,18 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 //    outlets
     @IBOutlet weak var menuBtn: UIButton!
-
     @IBOutlet weak var channelNameLabl: UILabel!
     @IBOutlet weak var msgTextbox: UITextField!
-    
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var sendBtn: UIButton!
+//    var
+    var isTyping = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        sendBtn.isHidden = true
         
 //        dynamic table dimension
         tableView.estimatedRowHeight = 80
@@ -46,6 +48,14 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: NOTIF_CHANNELS_SELECTED, object: nil)
         
+        SocketService.instance.getChatMessage { (success) in
+            self.tableView.reloadData()
+            if MessageServices.instance.messages.count > 0 {
+                let endIndex = IndexPath(row: MessageServices.instance.messages.count - 1, section: 0)
+                self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: true)
+            }
+        }
+        
 //        check if user is logged out
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail(completion: { (success) in
@@ -59,6 +69,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             onLoginGetMessages()
         } else {
             channelNameLabl.text = "Please Log In"
+            tableView.reloadData()
         }
     }
      @objc func channelSelected(_ notif: Notification) {
@@ -76,9 +87,20 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         getMessages()
     }
     
+    @IBAction func editing(_ sender: Any) {
+        if msgTextbox.text == "" {
+            isTyping = false
+            sendBtn.isHidden = true
+        } else {
+            if isTyping == false {
+                sendBtn.isHidden = false
+            }
+            isTyping = true
+        }
+    }
     
     @IBAction func sendMsgPressed(_ sender: Any) {
-        if AuthService.instance.isLoggedIn {
+        if AuthService.instance.isLoggedIn && msgTextbox.text != "" {
             guard let channelId = MessageServices.instance.selectedChannels?.id else { return }
             guard let message = msgTextbox.text else { return }
             SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId, completion: { (success) in
@@ -86,6 +108,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 self.msgTextbox.resignFirstResponder()
             })
         }
+        
     }
     func onLoginGetMessages() {
         MessageServices.instance.findAllChannel { (success) in
@@ -101,6 +124,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
+    
     func getMessages() {
         guard let channelId = MessageServices.instance.selectedChannels?.id else {return}
         MessageServices.instance.findAllMesssagesForChannels(channelId: channelId) { (success) in

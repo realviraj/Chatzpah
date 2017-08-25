@@ -12,23 +12,14 @@ class LoginVC: UIViewController {
     
     
 //    outlets
-    
     @IBOutlet weak var userNameTxt: UITextField!
-    
     @IBOutlet weak var passwordTxt: UITextField!
-
     @IBOutlet weak var spinner: UIActivityIndicatorView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-
-        
     }
-    
-    
-    
     @IBAction func loginPressed(_ sender: Any) {
         spinner.isHidden = false
         spinner.startAnimating()
@@ -60,7 +51,6 @@ class LoginVC: UIViewController {
     @IBAction func createAccBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_CREATEACCOUNT, sender: nil)
     }
-    
     func setUpView() {
         spinner.isHidden = true
         userNameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSForegroundColorAttributeName: chatsPurplePlaceholder])
