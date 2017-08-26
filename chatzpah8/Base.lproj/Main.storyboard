@@ -488,7 +488,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.60529851909999999" green="0.15731519460000001" blue="0.72755950690000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ush-zs-Q0l">
                                         <rect key="frame" x="0.0" y="92" width="250" height="2"/>
@@ -604,7 +604,7 @@
                                     <constraint firstItem="tVG-W5-VOk" firstAttribute="centerY" secondItem="8pi-Ae-hXz" secondAttribute="centerY" id="vMe-H0-XyD"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Do chatzPah" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="97Y-lz-Bb7">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="97Y-lz-Bb7">
                                 <rect key="frame" x="0.0" y="627" width="375" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="sXc-ui-mmH"/>
@@ -682,6 +682,12 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ket-R1-sOr">
+                                <rect key="frame" x="8" y="606" width="35.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -690,7 +696,9 @@
                             <constraint firstAttribute="trailing" secondItem="bQS-i5-4sk" secondAttribute="trailing" constant="8" id="Icb-Th-Zf6"/>
                             <constraint firstItem="xMa-qE-vNn" firstAttribute="leading" secondItem="Z4a-Ka-h9j" secondAttribute="leading" id="LIf-wK-btI"/>
                             <constraint firstAttribute="trailing" secondItem="xMa-qE-vNn" secondAttribute="trailing" id="YM0-vd-QSE"/>
+                            <constraint firstItem="97Y-lz-Bb7" firstAttribute="top" secondItem="Ket-R1-sOr" secondAttribute="bottom" constant="4" id="fLL-fz-kdE"/>
                             <constraint firstItem="ba9-uS-ruf" firstAttribute="top" secondItem="97Y-lz-Bb7" secondAttribute="bottom" id="iia-mI-kvA"/>
+                            <constraint firstItem="Ket-R1-sOr" firstAttribute="leading" secondItem="Z4a-Ka-h9j" secondAttribute="leading" constant="8" id="jW8-hf-Rlj"/>
                             <constraint firstItem="DpN-9G-Lrt" firstAttribute="top" secondItem="xMa-qE-vNn" secondAttribute="bottom" id="lqs-ud-Lsc"/>
                             <constraint firstAttribute="trailing" secondItem="97Y-lz-Bb7" secondAttribute="trailing" id="o58-XN-SRs"/>
                             <constraint firstItem="xMa-qE-vNn" firstAttribute="top" secondItem="Z4a-Ka-h9j" secondAttribute="top" id="pzg-VW-fOZ"/>
@@ -705,6 +713,7 @@
                         <outlet property="msgTextbox" destination="97Y-lz-Bb7" id="U6C-WU-RTg"/>
                         <outlet property="sendBtn" destination="bQS-i5-4sk" id="dQ0-vN-TL3"/>
                         <outlet property="tableView" destination="DpN-9G-Lrt" id="KIL-1H-6pv"/>
+                        <outlet property="typingUserLbl" destination="Ket-R1-sOr" id="DgR-UH-U3U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfC-v4-daM" userLabel="First Responder" sceneMemberID="firstResponder"/>
